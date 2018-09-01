@@ -26,3 +26,6 @@ before_script:
 
 script:
   - vendor/bin/phpunit
+
+notifications:
+  slack: htactive:xCEvXTqOyuXBRWS9E2yL51KT
