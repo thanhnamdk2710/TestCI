@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return "Hello World"
+    name = "Hello World";
+    return $name;
 });
