@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    name = "Hello World";
-    return $name;
-});
+Route::get('/', 'PostController@index');
