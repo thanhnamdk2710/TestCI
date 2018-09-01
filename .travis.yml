@@ -21,7 +21,11 @@ before_script:
   - ./vendor/laravel/dusk/bin/chromedriver-linux &
   - cp .env.testing .env
   - php artisan serve > /dev/null 2>&1 &
+  - php artisan migrate
+  - php artisan db:seed
 
 script:
   - vendor/bin/phpunit
-  - php artisan dusk
+
+notifications:
+  slack: htactive:xCEvXTqOyuXBRWS9E2yL51KT
